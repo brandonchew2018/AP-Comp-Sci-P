@@ -8,6 +8,9 @@ Math operators: #math, #operators, #built-in
 % modulates; x%y returns math value x%y (remainder of x/y)
 ** exponentiates; x**y returns math value of x^y(not the bitwise or function)
 abs(x); returns absolute value of x
+range(x), generates x numbers, from 0 to x-1
+range(x,y) generates numbers x to y-1
+range(x,y,z) generates numbers from x to y-1, with step size of z
 
 Math library: #math
 round(float x); rounds numerically
@@ -31,6 +34,7 @@ Printing: #print
 print(string); prints out string on its own line
 print(string1,string2,string3...) prints out each string on the same line, with a space between each item
 print(string1+string2+string3...) prints out all strings on the same line, without spaces in between, but '' must be used instead of ""
+print(string1, ..., sep="string2", end="string3"); prints string1 and on, delimiting with string2 and ending with string3 (will not print on its own line if end != \n)
 
 
 Commenting: #comment
@@ -68,4 +72,6 @@ else:
 for x in (range (y,z), string, list, collection, collection of collections, etc.):
     code 1
     
-; executes code 1 based on iterations of conditional( 1 at a time)
+; executes code 1 based on iterations of conditional( 1 at a time) note: lists can be differnt types
+
+Types:
